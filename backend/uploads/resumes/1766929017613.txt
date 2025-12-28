@@ -1,0 +1,107 @@
+uses in routing:(CN)
+1️⃣ IP Address (Network Layer)
+Used by routers to decide the path from source to destination across networks.
+Every router on the path checks the destination IP address in the packet header to forward it to the next hop.
+Example: A packet going from your laptop (192.168.1.5) to Google (142.250.190.78).
+Routers along the way keep looking at 142.250.190.78 (destination IP).
+They decide the next hop based on their routing table.
+✅ So, IP address is the key for routing.
+2️⃣ MAC Address (Data Link Layer)
+Only works inside a local network (LAN).
+When your computer sends a packet to the router, it uses the router’s MAC address (next hop).
+Once the packet leaves your LAN, the MAC address is changed hop-by-hop.
+Routers rewrite the frame with new MAC addresses for each link, but the IP address stays the same end-to-end.
+✅ So, MAC address is for local delivery, IP address is for global routing.
+
+🌐 HTTP (HyperText Transfer Protocol)
+Type: Request–Response protocol.
+Communication: One-way at a time. Client always initiates (browser → server).
+Connection: Each request opens a new TCP connection (unless using keep-alive).
+Latency: Higher (because every interaction needs headers + handshake).
+Use Cases: Websites, APIs, file downloads, form submissions.
+🔌 WebSocket
+Type: Full-duplex protocol (two-way).
+Communication: Both client and server can send data anytime.
+Connection: Single persistent TCP connection (after initial HTTP handshake).
+Latency: Very low (no repeated headers or handshakes).
+Use Cases: Chat apps, gaming, stock tickers, live notifications, collaborative apps.
+
+
+
+ACID Properties Recap
+Atomicity – Either the whole transaction happens or none of it.
+Consistency – Transaction takes DB from one valid state to another.
+Isolation – Concurrent transactions should not interfere with each other.
+Durability – Once committed, data stays even after failure.
+
+
+
+***(SELECT * 
+FROM airbnb_listings 
+//starts with j and does not end with t
+WHERE city LIKE 'j%' AND city NOT LIKE '%t';)
+
+
+
+Here are the different types of the JOINs in SQL:
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+
+
+//left join gives all the names who are not having the address also; 
+select firstname,lastname,city,state
+from Person as p 
+left join Address as a
+on p.personId=a.personId;
+
+
+
+//comparision
+auto maxElement = std::max_element(
+                countMap.begin(), countMap.end(),
+                [](const auto& a, const auto& b) {
+                    return a.second < b.second; // Compare the values
+                }
+            );
+
+
+
+maximum depth of any character
+The depth of any character in the VPS is the ( number of left brackets before it ) - ( number of right brackets before it )
+
+
+reverse a linked list using stack kuda cheyachu first ani stack loki push chesukoni tharuvatha okokati stack lonchi top thesukoni pop chesi new nodes create chesi link chesukovadame;
+
+
+619. Biggest Single Number
+select max(num) as num from (
+    select num
+    from MyNumbers 
+    group by num
+    having count(num)<2
+)
+as num;
+
+call by reference
+#include <iostream>
+using namespace std;
+
+void modifyReference(int &x) { // reference parameter
+    x = x + 10;
+    cout << "Inside function (call by reference): " << x << endl;
+}
+
+int main() {
+    int a = 5;
+    cout << "Before function call: " << a << endl;
+    modifyReference(a);
+    cout << "After function call: " << a << endl; // value changed
+    return 0;
+}
+
+STATIC VARIABLE:
+because the static variable is shared by all the objects of the class once it is changed by any one object it will be changed for all the objects;

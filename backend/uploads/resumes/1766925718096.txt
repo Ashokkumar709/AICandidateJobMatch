@@ -1,0 +1,44 @@
+Chinninti Ashok Kumar
+
+Education
+2022 – Present B.Tech in Computer Science, SRM University, Amaravathi (CGPA: 8.58)
+Skills
+Programming Languages C, C++, Java, JavaScript(ES6+), Python(Basic), HTML5
+Frameworks & Libraries Next.js, React.js, Node.js, Express.js, Tailwind CSS, Material UI, Restful API’s
+Databases MongoDB, MYSQL, Redis
+Tools & Platforms Git, Github, Postman, Render, Docker
+Core CS Concepts Data Structures & Algorithms, OOPS, OS, DBMS, CN
+Work Experience
+Software Engineer – Inddev Ventures (Remote) May 2025 – July 2025
+• Developed core features for AgentKart including onboarding, agent listing management, and appointment scheduling
+using MERN + Next.js.
+• Built reusable UI components and dashboards, ensuring responsive layouts and smooth user/agent navigation.
+• Designed and secured RESTful APIs with Express.js, MongoDB, JWT-based auth, and middleware-driven route protection.
+• Integrated real-time communication with WebSockets for live chat and video consultation workflows.
+Frontend Developer – Edunet Group of Companies (Remote) May 2023 – July 2023
+• Developed responsive and interactive web interfaces using HTML, CSS, and JavaScript, ensuring optimal performance
+across various devices and browsers.
+• Refined code to optimize application performance, leading to reduced load times and enhanced user experience.
+Projects
+Chat Application (MERN + Socket.io) 2 | React, Socket.io, Node.js, Express, MongoDB, Mongoose May 2025
+• Built a real-time chat platform using MERN + Socket.io with instant, bidirectional messaging.
+• Implemented secure authentication with JWT for login, registration, and session handling.
+• Designed RESTful APIs for messaging and user management using Express.js and MongoDB.
+• Optimized message storage and retrieval using efficient Mongoose schemas.
+ReachInbox-Style AI Onebox for Real-Time Email Automation 2 | IMAP, Node.js, Redis, MongoDB
+• Developed a production-grade Onebox Email Aggregation system supporting real-time multi-account IMAP sync using
+IDLE mode.
+• Used Redis + BullMQ based job queues to optimize email ingestion and reduce indexing latency by 10×.
+• Built an asynchronous worker service that reduced MongoDB load by ˜65% through deduplication and background
+processing.
+• Implemented RAG(Retrieval-Augmented Generation) with LLMs to suggest replies.
+QueueCTL – CLI-Based Background Job Queue System | Javascript, Node.js, Express.js, Commander.js May 2025
+• Built a scalable job queue system in Node.js supporting 50+ concurrent jobs with persistent JSON-based storage.
+• Implemented exponential backoff retries and a Dead Letter Queue (DLQ), reducing unhandled job failures by 70%.
+• Developed a 10+ command CLI tool for enqueueing, worker management, configuration, and DLQ recovery.
+• Created a lightweight monitoring dashboard that tracks 6+ job states and real-time worker activity, improving visibility
+by 80%.
+Achievements
+• National Finalist – HackVYHA 2024: Developed and presented a working prototype under tight deadlines, demonstrating innovation, teamwork, and adaptability.
+• Solved 300+ coding challenges across platforms like LeetCode, CodeChef, and GeeksforGeeks, strengthening algorithmic
+problem-solving skills.
